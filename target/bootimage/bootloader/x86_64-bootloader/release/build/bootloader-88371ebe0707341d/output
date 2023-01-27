@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/ankur/rust-os/minios/Cargo.toml
+cargo:rustc-link-search=native=/home/ankur/rust-os/minios/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-88371ebe0707341d/out
+cargo:rustc-link-lib=static=kernel_bin-minios
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/ankur/rust-os/minios/target/x86_64-blog_os/debug/minios
+cargo:rerun-if-changed=build.rs
